@@ -1,3 +1,4 @@
+
 var yyy = document.getElementById('xxx');
 var context = yyy.getContext('2d');
 var lineWidth = 5
@@ -72,6 +73,9 @@ function autoSetCanvasSize(canvas) {
 
     canvas.width = pageWidth
     canvas.height = pageHeight
+    context.fillStyle = "white";
+    context.fillRect(0,0,xxx.width,xxx.height);//背景变白色
+
   }
 }
 
@@ -178,5 +182,4 @@ if(document.body.ontouchstart !== undefined){
 
 
 }
-
 
